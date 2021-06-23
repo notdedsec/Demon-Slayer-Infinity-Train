@@ -39,4 +39,4 @@ grain = adptvgrnMod(deband, strength=0.25, size=1.15, sharp=75, static=True)
 exclude = lvf.rfs(grain, src, ranges=exclude_range)
 
 final = depth(exclude, 10)
-src.set_output()
+final.set_output()
